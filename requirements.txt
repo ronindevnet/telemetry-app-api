@@ -1,0 +1,6 @@
+Flask
+Flask-Cors
+flask-openapi3[swagger]
+pydantic
+SQLAlchemy
+SQLAlchemy-Utils
