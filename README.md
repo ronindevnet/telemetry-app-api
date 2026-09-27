@@ -35,6 +35,19 @@ Básico**. O código é escrito em inglês. O modelo tem três tabelas:
 
 - [Python 3](https://www.python.org/downloads/) instalado e disponível no terminal.
 
+### Atalho no Windows: `run.bat` e `stop.bat`
+
+Para simplificar, este diretório tem dois atalhos que substituem os passos 2 a 4
+abaixo. Basta dar um duplo-clique:
+
+| Arquivo | O que faz |
+|---|---|
+| `run.bat` | Na primeira execução, cria o ambiente virtual (`.venv`) e instala as dependências do `requirements.txt`. Em seguida, sobe a API em uma janela própria em `http://127.0.0.1:5000` e abre a documentação Swagger no navegador. |
+| `stop.bat` | Encerra o servidor, finalizando o processo que estiver escutando na porta `5000`. |
+
+> Também é possível parar a API fechando a janela **Telemetria API** aberta pelo
+> `run.bat`. Em outros sistemas operacionais, siga o passo a passo abaixo.
+
 ### 1. Acessar o diretório do projeto
 
 Após clonar o repositório, abra um terminal no diretório raiz (`telemetry_app_api`).
@@ -87,10 +100,6 @@ automaticamente após uma mudança no código fonte.
 > ```
 > .venv\Scripts\python.exe app.py
 > ```
->
-> No Windows também há o atalho `run.bat` neste diretório: um duplo-clique
-> cria o ambiente virtual (na primeira execução), sobe a API e abre a
-> documentação Swagger no navegador. O `stop.bat` encerra o servidor.
 
 Abra o [http://localhost:5000/](http://localhost:5000/) no navegador para
 acessar a documentação da API (Swagger, Redoc ou RapiDoc).
