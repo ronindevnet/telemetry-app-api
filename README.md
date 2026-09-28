@@ -143,7 +143,7 @@ pelo nome.
 }
 ```
 
-Lembre: `duration` em segundos (inteiro) e `money_spent` em reais inteiros.
+Obs: `duration` é em segundos inteiros, e `money_spent` é em reais inteiros. O front-end vai apresentar os dados com a formatação adequada.
 
 ---
 ## Catálogo de armas
@@ -158,7 +158,5 @@ formulário de *Adicionar arma* do front-end com o banco vazio), execute a parti
 do diretório `telemetry_app_api`, com a API já executada ao menos uma vez:
 
 ```
-(.venv)$ python -c "from model import Session, Weapon; s=Session(); s.add_all([Weapon(name='Escopeta'), Weapon(name='Rifle'), Weapon(name='Carabina'), Weapon(name='Pistola'), Weapon(name='Besta')]); s.commit()"
+(.venv)$ python -c "from model import Session, Weapon; s=Session(); s.add_all([Weapon(name='Escopeta'), Weapon(name='Rifle'), Weapon(name='Carabina'), Weapon(name='Pistola'), Weapon(name='Sniper')]); s.commit()"
 ```
-
-Use os nomes reais das armas da Unity.
